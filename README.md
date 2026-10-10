@@ -16,7 +16,7 @@ This project contains a beginner-friendly Jupyter notebook that demonstrates the
 Open PowerShell and move to the project directory:
 
 ```powershell
-cd D:\Personal\CrewAIAgent
+cd "Enter project path"
 ```
 
 ## 2. Check Python
@@ -109,9 +109,6 @@ Add the following line to `.env`, replacing the placeholder with your Gemini API
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
-Do not commit `.env`. It is excluded by this project's `.gitignore`.
-
-Confirm that Python can load the key without printing its value:
 
 ```powershell
 python -c "from dotenv import load_dotenv; import os; load_dotenv(); print('Gemini key configured:', bool(os.getenv('GEMINI_API_KEY')))"
@@ -160,7 +157,7 @@ result = await gemini_crew.kickoff_async()
 Each time you open a new PowerShell terminal, reactivate the environment before running the notebook:
 
 ```powershell
-cd D:\Personal\CrewAIAgent
+cd "Enter your project Path"
 .\.venv\Scripts\Activate.ps1
 ```
 
